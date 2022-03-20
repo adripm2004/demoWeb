@@ -1,0 +1,128 @@
+<html>
+<head>
+
+<title> Videos </title>
+<link href="estilosweb.css" rel="stylesheet" type="text/css">
+<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+
+</head>
+<body>
+
+<img src="banner.png" width="1325" height="300">
+
+<img src="gradiente.jpg">
+<a href="pagina3.html" class="indice4"> Contacto </a>
+<a href="pagina2.html" class="indice3"> Productos </a>
+<a href="pagina1.html" class="indice2"> Videos </a>
+<a href="index.html" class="indice1"> Inicio </a>
+
+<br><br><br>
+
+<h1> Videos más importantes </h1>	
+
+<div class="caja">	
+<div class="video1">	
+<h2> ¿Por qué no se cayó Notre-Dame? </h2>
+<iframe width="392" height="220.5" src="https://www.youtube.com/embed/bloOQd5YUQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video2">
+<h2> La "performance" </h2>
+<iframe width="392" height="220.5" src="https://www.youtube.com/embed/G9rIdj1lyJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+	
+<div class="video3">
+<h2> Cambio de look, cambio de era </h2>
+<iframe width="392" height="220.5" src="https://www.youtube.com/embed/nKYN8nhFm-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+</div>
+</div>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<hr>
+<br>
+
+<h1> Otros videos de interés </h1>
+	
+<div class="caja">	
+<div class="video1">
+<h2> Los colores secretos de los emojis </h2>  	
+<iframe width="392" height="220.5" src="https://www.youtube.com/embed/nQ7mP2WHUGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video2">
+<h2> Presentación de su novio Jaime </h2>
+<iframe width="392" height="220.5" src="https://www.youtube.com/embed/FMb31WD4wG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video3">
+<h2> Los increíbles arcos de Gaudí </h2>
+<iframe width="392" height="220.5" src="https://www.youtube.com/embed/_xJWESxbP0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="caja">
+<div class="video1">
+<h2> ¿Este cambio de logo cuesta 250.000 euros? </h2>
+<iframe width="392" height="220.5" src="https://www.youtube.com/embed/h5DY5GD3uF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video2">
+<h2> 12 frases que me han cambiado la vida </h2>
+<iframe width="392" height="220.5" src="https://www.youtube.com/embed/UlszqT_DEpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video3">
+<h2> Fabricando mis propios diamantes </h2>
+<iframe width="392" height="220.5" src="https://www.youtube.com/embed/BciOxuqGdpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<hr>
+
+<br>
+
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+
+</body>
+</html>

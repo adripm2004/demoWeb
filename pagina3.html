@@ -1,0 +1,139 @@
+<html>
+<head>
+
+<title> Contacto </title>
+<link href="estilosweb.css" rel="stylesheet" type="text/css">
+<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+
+</head>
+<body>
+
+<img src="banner.png" width="1325" height="300">
+<img src="gradiente.jpg">
+
+<a href="pagina3.html" class="indice4"> Contacto </a>
+<a href="pagina2.html" class="indice3"> Productos </a>
+<a href="pagina1.html" class="indice2"> Videos </a>
+<a href="index.html" class="indice1"> Inicio </a>
+
+<br><br><br><br>
+
+<h1> Redes sociales </h1>
+<div class="caja">
+<div class="redes">
+<h2> Youtube: <a href="https://www.youtube.com/channel/UCCNgRIfWQKZyPkNvHEzPh7Q">Ter</a> </h2>
+<h2> Instagram: <a href="https://www.instagram.com/tercosmicqueen/">@tercosmicqueen</a> </h2>
+<h2> Twitter: <a href="https://twitter.com/tercosmicqueen">@tercosmicqueen</a> </h2>
+<h2> Facebook <a href="https://www.facebook.com/tercosmicqueen/">@tercosmicqueen</a> </h2>
+</div>
+<div class="perfil">
+<img src="perfil.png" width="300" height="300">
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<hr>
+
+<h1> Trámites </h1>
+<div class="caja">
+<div class="mapa">
+<h2> Ubicación de Notre Dame </h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10501.224734411398!2d2.343905131597539!3d48.852371537828816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671e39dd448af%3A0xe95d8ec82cfaf643!2sNotre%20Dame%2C%20Par%C3%ADs%2C%20Francia!5e0!3m2!1ses!2ses!4v1647701712032!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<div class="formulario">
+
+<fieldset>
+	<legend><h2> Realice su pedido </h2></legend>
+
+	<p> Láminas elegidas </p>
+	<p> <input type="checkbox" name="casilla"> Arquitectura gótica </p>
+	<p> <input type="checkbox" name="casilla"> Diseño de las frutas </p>
+	<p> <input type="checkbox" name="casilla"> La performance </p>
+	<p> <input type="checkbox" name="casilla"> Los edificios más finos del mundo </p>
+	<br>
+	<p> Tamaño </p>
+	<p> <input type="radio" name="boton" value="1"> A3 (29,7 cm x 42 cm) </p>
+	<p> <input type="radio" name="boton" value="2"> A4 (21 cm x 29,7 cm) </p>
+	<p> <input type="radio" name="boton" value="3"> A5 (14,8 cm x 21 cm) </p>
+
+
+</fieldset>
+
+
+
+<fieldset>
+
+	<legend><h2> Datos de entrega </h2></legend>
+
+	<p> Nombre: <input type="text" name="nombre"> </p>
+	<p> Dirección: <input type="text" name="nombre"> </p>
+	<p> Teléfono: <input type="text" name="nombre"> </p>
+	
+</fieldset>
+
+<fieldset>
+	<legend><h2> Método de pago </h2></legend>
+	<select name="menu">
+		<option> Efectivo </option>
+		<option> Tarjeta </option>
+	</select>
+</fieldset>
+<br>
+<input type="reset" value="OK">  
+
+</form>
+
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<hr>
+
+<br>
+
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+
+</body>
+</html>

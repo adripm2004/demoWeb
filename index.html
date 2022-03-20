@@ -1,0 +1,111 @@
+<html>
+<head>
+
+<title> Inicio </title>
+<link href="estilosweb.css" rel="stylesheet" type="text/css">
+<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+
+</head>
+<body>
+
+<img src="banner.png" width="1325" height="300">
+
+<img src="gradiente.jpg">
+<a href="pagina3.html" class="indice4"> Contacto </a>
+<a href="pagina2.html" class="indice3"> Productos </a>
+<a href="pagina1.html" class="indice2"> Videos </a>
+<a href="index.html" class="indice1"> Inicio </a>
+
+<br><br><br>
+
+<h1> ¿Quién es Ter? </h1>
+
+<div class="caja">	
+<h2 class="texto_1"> Ter es una youtuber conocida por su variado contenido y su pelo azul. Cuenta con un grado en arquitectura,
+lo que hace que muchos de sus videos estén centrados en explicaciones originales del funcionamiento de las estructuras
+de diversos edificios. Sin embargo, esto no la convierte en una youtuber entregada por completo a este tipo de contenido,
+ya que en su canal encontramos videos de temas muy variados, pasando por  blogs comentando la Met Gala, analisis de
+videoclips musicales y refranes, o videos de un caracter más personal, sin dejar de lado su caracteristica ironía </h2>
+<div class="inicio_1">
+<img src="inicio_1.png" height="300.3" width="351">
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<br><br>
+
+<div class="caja">	
+<h2 class="texto_2"> Mantiene una relación con el youtuber Jaime Altozano, cuyo canal tiene como temática principal
+la música, tanto en relación a explicaciones teoricas como si de un conservatorio se tratase, como divertidos y curiosos
+análisis de bandas sonoras o fenómenos cotidianos relacionados con la acustica. Llevan saliendo juntos más de tres años, compartiendo
+casa, seguidores, e incluso gato. A pesar de mantener sus canales del Youtube por separado y no haber expuesto mucho su relación
+, es imposible imaginar al uno sin el otro, ya que sus personalidades se fusionan a la perfección </h2>
+<div class="inicio_2">
+<img src="inicio_2.png" height="304.2" width="307.84">
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<br><br>
+
+<div class="caja">	
+<h2 class="texto_3"> La característica más llamativa de Ter es su llamativo pelo azul, el cual ha liderado la paleta de colores
+de su canal, su estética personal y sus productos por muchos años. Sin embargo, la arquitecta ha decidido sorprendernos recientemente
+con un cambio de look: vuelta a su moreno natural. En uno de sus videos, nos confiesa que dejó de teñirse el pelo en enero de 2020, 
+y a partir de dicha fecha, en algunos de sus videos optó por usar una peluca para que no nos percataramos del cambio. Cuando
+se ha visto preparada para realizar el cambio de imagen, publico varias fotos en sus redes sociales, las cuales causaron un gran
+impacto. De esta forma, la youtuber daba fin a una mítica era para abrir paso a nuevas etapas </h2>
+<div class="inicio_3">
+<img src="inicio_3.png" height="255" width="351">
+</div>	
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<hr>
+
+<br>
+
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+
+</body>
+</html>

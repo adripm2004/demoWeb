@@ -1,0 +1,109 @@
+<html>
+<head>
+
+<title> Productos </title>
+<link href="estilosweb.css" rel="stylesheet" type="text/css">
+<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+
+</head>
+<body>
+
+<img src="banner.png" width="1325" height="300">
+
+<img src="gradiente.jpg">
+<a href="pagina3.html" class="indice4"> Contacto </a>
+<a href="pagina2.html" class="indice3"> Productos </a>
+<a href="pagina1.html" class="indice2"> Videos </a>
+<a href="index.html" class="indice1"> Inicio </a>
+
+<br><br><br><br>
+
+<h1> Láminas decorativas </h1>
+<center>
+<h2 class="titulo_lamina"> La Performance </h2>
+<img src="lamina1.jpg" width="876.05" height="656.95">
+</center>
+
+<br><br><br>
+<hr>
+
+<h1> Láminas explicativas </h1>
+
+<br><br>
+
+<div class="caja">
+
+<div class="lamina1">
+<h2 class="titulo_lamina"> Los edificios más finos del mundo </h2>
+<img src="lamina2.jpg" width="581.115" height="774.915">
+</div>
+
+<div class="lamina2">
+<h2 class="titulo_lamina"> La arquitectura gótica </h2>
+<img src="lamina3.jpg" width="581.115" height="774.915">
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="caja">
+<div class="lamina1">
+<h2 class="titulo_lamina"> El diseño de las frutas </h2>
+<img src="lamina4.jpg" width="581.115" height="774.915">
+</div>
+
+<div class="lamina2">
+<h2 class="titulo_lamina"> La magia de la catenaria </h2>
+<img src="lamina5.jpg" width="581.115" height="774.915">
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<hr>
+
+<br>
+
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+
+</body>
+</html>
